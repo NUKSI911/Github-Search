@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from 'react';
-import PropTypes from 'prop-types';
 import CardList from '../../components/CardList/CardList';
 import classes from './Home.module.css';
 
@@ -36,11 +35,12 @@ function Home() {
   };
 
   const handleEnterKey = (e) => {
-    if (e.keyCode === 13) {
+    if (e.keyCode === 13 && !['', undefined].includes(searchValue)) {
       e.preventDefault();
       handleSearch();
     }
   };
+
   useEffect(() => {
     isError && handleApiError(error);
   }, [error, isError]);
@@ -73,7 +73,10 @@ function Home() {
             onKeyUp={handleEnterKey}
           />
           <div>
-            <button className={classes.searchBtn} onClick={handleSearch}>
+            <button
+              className={classes.searchBtn}
+              onClick={handleSearch}
+              disabled={['', undefined].includes(searchValue)}>
               Search
             </button>
           </div>
@@ -110,12 +113,12 @@ function Home() {
               </span>
               <span className={classes.pagItem}>of</span>
               <span className={classes.pagItem}>
-                {totalPages && Math.floor(totalPages)}
+                {totalPages && Math.ceil(totalPages)}
               </span>
             </div>
             <button
               className={classes.paginateBtn}
-              disabled={data.length < pageNo * 15}
+              disabled={pageNo === Math.ceil(totalPages)}
               onClick={() => {
                 setPageNo((page) => page + 1);
                 scrollToTop();

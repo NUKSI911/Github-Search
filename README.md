@@ -1,6 +1,6 @@
 # Template Page Task - REACT 🔥
 
-[![Netlify Status](https://api.netlify.com/api/v1/badges/ac318cf7-3b66-44f1-b18b-4b283dca4809/deploy-status)](https://app.netlify.com/sites/formplus-task/deploys) ![GitHub Workflow Status](https://img.shields.io/github/workflow/status/nuksi911/FormPlus/Template-Home)
+[![Netlify Status](https://api.netlify.com/api/v1/badges/ac318cf7-3b66-44f1-b18b-4b283dca4809/deploy-status)](https://app.netlify.com/sites/frontend-challenge-04/deploys) ![GitHub Workflow Status](https://img.shields.io/github/workflow/status/nuksi911/FormPlus/Template-Home)
 [![Twitter Follow](https://img.shields.io/twitter/follow/nurudeenyekeen1?style=social)](https://twitter.com/nurudeenyekeen1)
 
 [![JavaScript](https://img.shields.io/badge/-JavaScript-fff?&logo=JavaScript&logoColor=ddc508)]()
@@ -8,13 +8,13 @@
 
 A Template UI built with React .
 
-[Here](https://frontend-challenge04.netlify.app/) is the link to the Live Demo
+[Here](https://frontend-challenge-04.netlify.app/) is the link to the Live Demo
 
 Star⭐ the repo if you like what you see😉.
 
 ## 📖Table of contents
 
-- [Techologies](#technologies)
+- [Technologies](#technologies)
 - [Getting Started](#getting-started)
   - [Features](#features)
   - [Deployment](#deployment)
