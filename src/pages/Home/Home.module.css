@@ -1,0 +1,204 @@
+.templateTopSec {
+  display: flex;
+  justify-content: space-between;
+}
+.templateHeader {
+  display: flex;
+  justify-content: space-between;
+  margin: 20px 0;
+}
+
+.templateHeaderItem {
+  font-size: 20px;
+  line-height: 23px;
+  font-weight: 500;
+  color: #3f3e3e;
+}
+
+.templateHeaderSummary {
+  font-size: 16px;
+  line-height: 18px;
+  color: #989898;
+}
+
+
+.searchContainer {
+  display: flex;
+  align-items: stretch;
+  border: 1px solid #bdbdbd;
+  justify-content: space-between;
+  border-radius: 5px;
+  width: 100%;
+}
+
+.searchContainer:focus-within {
+  border:2px solid #bdbdbd;
+}
+.searchIcon {
+  width: 5%;
+  padding:10px;
+  display: flex;
+  padding-left: 5px;
+  justify-content: center;
+}
+
+.searchBtn {
+  background-color: skyblue;
+  height: 100%;
+  border: none;
+  padding:20px;
+}
+.searchBox::placeholder {
+  font-size: 12px;
+  line-height: 20px;
+  color: #8f8b8b;
+}
+
+.searchBox,
+.searchBox:hover,
+.searchBox:focus-within {
+  outline: none;
+  border: none;
+}
+.searchBox {
+  width: 90%;
+  border: none;
+  padding: 5px 10px 5px 20px;
+  border-radius: 5px;
+}
+
+.dropdownsWrapper {
+  width: 50%;
+  display: inline-flex;
+  justify-content: stretch;
+  align-items: center;
+}
+
+.dropdown {
+  flex: 1 1 auto;
+  margin-right: 20px;
+  /* border: 1px solid black */
+}
+
+.feedBoxWrapper {
+  margin: 40px 0 40px;
+}
+.paginateContainer {
+  padding: 30px;
+  display: flex;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 23px;
+  justify-content: space-between;
+}
+
+.paginateBtn {
+  margin: 0 20px;
+  border: none;
+  background: none;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 23px;
+}
+
+.paginateBtn:hover:not(:disabled) {
+  text-decoration: underline;
+  cursor: pointer;
+
+}
+
+.paginateBtn:disabled {
+  cursor: not-allowed;
+}
+
+
+.noTotalContainer {
+
+}
+
+.presentPageNo {
+  padding: 4px 10px;
+  border-radius: 3px;
+  border: 1px solid #3f3f3f;
+}
+
+.pagItem {
+  display: inline-block;
+  margin: 0 10px;
+}
+
+.sortLabel {
+  display: inline-block;
+  margin-right: 20px;
+  font-size: 14px;
+  line-height: 16px;
+  color: #989898;
+}
+
+/* Media Query  */
+@media screen and (max-width: 1200px) {
+  .templateTopSec {
+    flex-direction: column;
+  }
+  .searchIcon {
+    padding:10px;
+  }
+
+  .dropdown {
+    margin-right: 10px;
+  }
+  .searchBox {
+    width: 93%;
+  }
+
+  .searchIcon {
+    width: 7%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+@media screen and (max-width: 720px) {
+  .templateTopSec {
+    display: flex;
+    flex-direction: column;
+  }
+  .searchContainer {
+    width: 100%;
+  }
+
+  .searchIcon {
+    width: 10%;
+  }
+
+
+}
+
+@media screen and (max-width: 460px) {
+    .paginateContainer{
+        padding:10px;
+        margin-top:10px;
+    }
+
+    .presentPageNo {
+      padding:0px 5px
+    }
+
+    .pagItem {
+      margin : 0 3px
+    }
+    .noTotalContainer{
+        align-content: center;
+    align-self: center;
+    display:flex
+    }
+    .paginateBtn {
+      flex:0 0 30%;
+        margin: 0 5px;
+    }
+    .searchIcon {
+      width: 15%;
+      padding-left: 0px;
+    }
+}
