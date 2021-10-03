@@ -6,7 +6,7 @@
 [![JavaScript](https://img.shields.io/badge/-JavaScript-fff?&logo=JavaScript&logoColor=ddc508)]()
 ![React](https://img.shields.io/badge/-React-fff?&logo=React)
 
-A Template Ui built with React  . 
+A Template UI built with React .
 
 [Here](https://frontend-challenge04.netlify.app/) is the link to the Live Demo
 
@@ -77,4 +77,3 @@ CORS - Solved By Utilising CORS-Anywhere
 ## 🔖 LICENCE
 
 This project is licensed under the [MIT 2.0 License](LICENSE) which allows very broad use for both academic and commercial purposes.
-
