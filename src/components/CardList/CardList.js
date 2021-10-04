@@ -25,9 +25,10 @@ function CardList({ data, isLoading }) {
 export default CardList;
 
 CardList.defaultProps = {
-  data: [],
+  data: null,
 };
 
 CardList.propTypes = {
   data: PropTypes.oneOfType([PropTypes.object, PropTypes.array]).isRequired,
+  isLoading: PropTypes.bool.isRequired,
 };

@@ -135,3 +135,6 @@ function Home() {
 }
 
 export default Home;
+
+Home.defaultProps = null;
+Home.propTypes = null;

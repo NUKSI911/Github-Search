@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import Skeleton from 'react-loading-skeleton';
 import isEmpty from 'lodash/isEmpty';
 import Modal from './../Modal';
+import PropTypes from 'prop-types';
 
 import { useFetchContributors } from '../../hooks/useFetch';
 import { handleApiError } from '../../config/methods';
@@ -45,7 +46,7 @@ export default function Contributors({ fullName }) {
             Contributors
           </p>
           <div style={{ display: 'flex' }}>
-            {data.slice(0, 5).map((contributor, index) => {
+            {data?.slice(0, 5).map((contributor, index) => {
               return (
                 <ToolTip
                   key={index}
@@ -84,6 +85,10 @@ export default function Contributors({ fullName }) {
   );
 }
 
+Contributors.propTypes = {
+  fullName: PropTypes.string.isRequired,
+};
+
 function Image({ contributor }) {
   return (
     <img
@@ -96,6 +101,9 @@ function Image({ contributor }) {
     />
   );
 }
+Image.propTypes = {
+  contributor: PropTypes.object.isRequired,
+};
 
 function renderContributorsResult(data = []) {
   return (
@@ -128,4 +136,8 @@ const Info = ({ contributor }) => {
       </div>
     </div>
   );
+};
+
+Info.propTypes = {
+  contributor: PropTypes.object.isRequired,
 };

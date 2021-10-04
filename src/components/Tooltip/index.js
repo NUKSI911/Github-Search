@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import ReactTooltip from 'react-tooltip';
 
 export default function ToolTip({ children, id, title }) {
@@ -13,3 +14,16 @@ export default function ToolTip({ children, id, title }) {
     </>
   );
 }
+
+ToolTip.defaultProps = null;
+
+ToolTip.propTypes = {
+  children: PropTypes.oneOfType([PropTypes.elementType, PropTypes.func])
+    .isRequired,
+  id: PropTypes.string.isRequired,
+  title: PropTypes.oneOfType([
+    PropTypes.string,
+    PropTypes.elementType,
+    PropTypes.func,
+  ]).isRequired,
+};

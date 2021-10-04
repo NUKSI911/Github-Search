@@ -1,4 +1,4 @@
-# Template Page Task - REACT 🔥
+# Github Search Task - REACT 🔥
 
 [![Netlify Status](https://api.netlify.com/api/v1/badges/ac318cf7-3b66-44f1-b18b-4b283dca4809/deploy-status)](https://app.netlify.com/sites/frontend-challenge-04/deploys) ![GitHub Workflow Status](https://img.shields.io/github/workflow/status/nuksi911/FormPlus/Template-Home)
 [![Twitter Follow](https://img.shields.io/twitter/follow/nurudeenyekeen1?style=social)](https://twitter.com/nurudeenyekeen1)
@@ -6,7 +6,7 @@
 [![JavaScript](https://img.shields.io/badge/-JavaScript-fff?&logo=JavaScript&logoColor=ddc508)]()
 ![React](https://img.shields.io/badge/-React-fff?&logo=React)
 
-A Template UI built with React .
+An assignment to build a client-only UI that lets the user search repositories on GitHub - Task done by Nurudeen Yekeen.
 
 [Here](https://frontend-challenge-04.netlify.app/) is the link to the Live Demo
 
@@ -18,7 +18,6 @@ Star⭐ the repo if you like what you see😉.
 - [Getting Started](#getting-started)
   - [Features](#features)
   - [Deployment](#deployment)
-  - [Issues Encountered](#issue-encountered)
 
 ## 🛠️Technologies
 
@@ -61,18 +60,14 @@ Your app is ready to be deployed!
 
 ## Deployment
 
-The application master branch is automatically linked to deploy to the production environment available on [Netlify](https://formplus-task.netlify.app) which enables
+The application main branch is automatically linked to deploy to the production environment available on [Netlify](https://frontend-challenge-04.netlify.app/) which enables
 testing of newly integrated features,build details can be seen in the `netlify.toml` configuration file.
-
-### 📮Issues Encountered
-
-CORS - Solved By Utilising CORS-Anywhere
 
 ## 🤓 Author(s)
 
 **Nurudeen Ahmad Yekeen** [![Twitter Follow](https://img.shields.io/twitter/follow/nurudeenyekeen1?style=social)](https://twitter.com/nurudeenyekeen1)
 
-[![Visits Badge](https://badges.pufler.dev/visits/nuksi911/FormPlus)](https://badges.pufler.dev)
+[![Visits Badge](https://badges.pufler.dev/visits/nuksi911/Github-Search)](https://badges.pufler.dev)
 
 ## 🔖 LICENCE
 
