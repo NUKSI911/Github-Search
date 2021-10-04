@@ -7,19 +7,36 @@ import PropTypes from 'prop-types';
 
 function CardList({ data, isLoading }) {
   let skeletonArrayList = new Array(15).fill(0);
-  return (
-    <div className={classes.cardListWrapper}>
-      {data?.resolvedState === 'empty' && !isLoading ? (
-        <div className={classes.emptyBox}> Search Repo </div>
-      ) : isLoading ? (
-        skeletonArrayList.map((item, i) => (
+
+  const renderComponent = () => {
+    switch (true) {
+      case data?.resolvedState === 'empty' && !isLoading: {
+        return (
+          <div className={classes.emptyBox}>
+            Search Result will be displayed here{' '}
+          </div>
+        );
+      }
+
+      case isLoading: {
+        return skeletonArrayList.map((item, i) => (
           <Skeleton key={i} height={200} width={'100%'} />
-        ))
-      ) : (
-        data?.items?.map((template, i) => <Card data={template} key={i} />)
-      )}
-    </div>
-  );
+        ));
+      }
+
+      case data?.items?.length > 0: {
+        return data?.items?.map((template, i) => (
+          <Card data={template} key={i} />
+        ));
+      }
+
+      default: {
+        return <p> No Repo found , try again </p>;
+      }
+    }
+  };
+
+  return <div className={classes.cardListWrapper}>{renderComponent()}</div>;
 }
 
 export default CardList;

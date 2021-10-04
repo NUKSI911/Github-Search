@@ -56,7 +56,8 @@ function Home() {
   const totalPages = data?.total_count / 30;
 
   return (
-    <>
+    <main>
+      <h1> Search Github Repos</h1>
       <div className={classes.templateTopSec}>
         <div className={classes.searchContainer}>
           <span className={classes.searchIcon}>
@@ -130,7 +131,7 @@ function Home() {
           </>
         )}
       </div>
-    </>
+    </main>
   );
 }
 
